@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn School Project</title>
+    <link rel="stylesheet" href="taakwebsite.css">
+    <script src="taakwebsite.js" defer></script> <!-- JS wordt geladen na de HTML -->
+</head>
+<body>
+    <header>
+        <h1>Welkom op mijn schoolproject</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#over">Over mij</a></li>
+                <li><a href="#projecten">Projecten</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="toggle-section">
+        <h2 id="toggleText">Ja</h2>
+        <button onclick="toggleText()">Klik hier</button>
+    </section>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Dit is mijn eenvoudige schoolproject website. Hier vertel ik meer over mijn werk en mezelf.</p>
+    </section>
+    <section id="over">
+        <h2>Over mij</h2>
+        <p>Mijn naam is [Jouw Naam] en ik ben een student die gepassioneerd is over technologie en design.</p>
+    </section>
+    <section id="projecten">
+        <h2>Mijn Projecten</h2>
+        <ul>
+            <li>Project 1: Website bouwen</li>
+            <li>Project 2: Code leren</li>
+            <li>Project 3: App ontwikkelen</li>
+        </ul>
+    </section>
+    <button id="redBtn">Rood</button>
+    <button id="greenBtn">Groen</button>
+    <button id="blueBtn">Blauw</button>
+    <div class="calculator-container">
+        <input type="number" id="input1" placeholder="0">
+        <span class="plus-teken">+</span>
+        <input type="number" id="input2" placeholder="0">
+        <button onclick="bereken()">BEREKEN</button>
+        <input type="text" id="resultaat" placeholder="Resultaat" readonly>
+    </div>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Je kunt me bereiken via <a href="mailto:email@example.com">email@example.com</a>.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Mijn School Project. Alle rechten voorbehouden.</p>
+    </footer>
+    <script src="taakbutton.js" defer></script>
+</body>
+</html>
